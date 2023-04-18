@@ -8,7 +8,8 @@
 
 
 .bl {
-    background-color: black;
+    background-color: rgb(151, 179, 27);
+    
 
 }
 
@@ -16,7 +17,7 @@
     display: flex;
     border-radius: 2rem;
     height: 10vh;
-    background: rgb(9, 139, 53);
+    background: purple;
     background-blend-mode: multiply;
     align-items: center;
     position: sticky;
@@ -49,6 +50,8 @@
     border: 2px solid white;
     border-radius: 4rem;
     margin-top: 3rem;
+    background-color: rgb(219, 207, 207);
+    
 }
 
 .heading-1,
@@ -102,13 +105,14 @@
 
         width: 40vh;
         height: 40vh;
+        
 
     }
 
     to {
         transform: rotate(360deg);
-        border: 2px solid white;
-        border-radius: 3.5rem;
+        /* border: 2px solid white; */
+        /* border-radius: 3.5rem; */
 
     }
 }
@@ -123,15 +127,19 @@
 
 .content-2 p {
     animation-name: content-2p;
-    animation-duration: 5s;
+    animation-duration: 2s;
+    
     animation-iteration-count: infinite;
 }
 
 @keyframes content-2p {
-    from {}
+    0%{}
 
-    to {
-        color: rgb(151, 179, 27);
+    50% {
+        color: rgb(79, 33, 30);
+    }
+    100%{
+
     }
 }
 
@@ -152,6 +160,7 @@
     font-size: 2rem;
     text-align: center;
     margin: 1em;
+    margin-top: 4rem;
 }
 
 .name input {
@@ -166,6 +175,10 @@
 
 .textarea {
     display: flex;
+    
+}
+.textarea span{
+    color: black;
 }
 
 body {
@@ -202,4 +215,55 @@ body {
     border: 2px solid white;
     border-radius: 23px;
     margin-left: 4em;
+}
+
+@media screen  and (max-width : 900px){
+    .content-1, .content-2{
+        display: block;
+        padding: 0px;
+        margin: 0px;
+        
+    }
+
+    
+    .body-1 , .body-2{
+        width: 100vw;
+    }
+
+    .photo-1 img , .photo-2 img{
+        
+    }
+    .photo-1{
+        animation: sai;
+        
+        @keyframes sai {
+            from{
+
+            }
+            to{
+
+            }
+            
+        }
+    }
+
+    .conta{
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+
+    }
+   
+    .conta ul li a{
+        padding: -4px;
+    }
+    .list-item a{
+        margin:0px -8px;
+    }
+    .photo-2, .photo-1{
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0px;
+
+    }
 }
